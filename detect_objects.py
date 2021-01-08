@@ -45,8 +45,8 @@ def DetectImagesFromFolder(detector, images_dir, save_output=False, output_dir='
 			det_boxes = detector.DetectFromImage(img)
 			img = detector.DisplayDetections(img, det_boxes)
 
-			cv2.imshow('TF2 Detection', img)
-			cv2.waitKey(0)
+			# cv2.imshow('TF2 Detection', img)
+			# cv2.waitKey(0)
 
 			if save_output:
 				img_out = os.path.join(output_dir, file.name)
@@ -88,4 +88,4 @@ if __name__ == "__main__":
 		DetectImagesFromFolder(detector, args.images_dir, save_output=args.save_output, output_dir=args.output_directory)
 
 	print("Done ...")
-	cv2.destroyAllWindows()
+	# cv2.destroyAllWindows()
