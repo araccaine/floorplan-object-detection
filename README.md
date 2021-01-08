@@ -166,7 +166,7 @@ In this tutorial, let's use the interesting [raccoon dataset](https://github.com
 The raccoon dataset contains a total of 200 images with 217 raccoons, which is suitable to use in tutorial examples.
 
 The original [dataset repo](https://github.com/datitran/raccoon_dataset) provides many scripts to deal with the dataset and randomly select images for train and test splits with 160 and 40 images respectively.
-However, just for convenience, and to decrease the efforts needed from you, I have included the dataset images and annotation in this repo (in [data/raccoon_data/](data/raccoon_data) ),
+However, just for convenience, and to decrease the efforts needed from you, I have included the dataset images and annotation in this repo (in [data/raccoon_data/](data/floorplan_data) ),
 and split them manually, taking the first 160 images for training, and the last 40 images for testing.
 I recommend checking the original [dataset repo](https://github.com/datitran/raccoon_dataset), along with this [article](https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9) written by the author of the dataset. 
 Here are some images from the raccoon dataset ([source](https://towardsdatascience.com/how-to-train-your-own-object-detector-with-tensorflows-object-detector-api-bec72ecfe1d9)).
@@ -208,7 +208,7 @@ cd data_gen/
 bash gen_data.sh 
 ```  
 
-After running this command, you will find the generated csv and tfrecords files located in [data/raccoon_data](data/raccoon_data). 
+After running this command, you will find the generated csv and tfrecords files located in [data/raccoon_data](data/floorplan_data). 
 Et voila, we have the tfrecord files generated, and we can use it in next steps for training.
 
 ------------------------------------------------------------
@@ -259,7 +259,7 @@ I downloaded [ssd_mobilenet_v2_320x320_coco17_tpu-8.config](https://github.com/t
     }
     ``` 
 
-You should also prepare the labelmap according to your data. For our raccoon dataset, the [labelmap file](models/raccoon_labelmap.pbtxt) contains:
+You should also prepare the labelmap according to your data. For our raccoon dataset, the [labelmap file](models/floorplan_labelmap.pbtxt) contains:
 
 ```
 item {
@@ -269,7 +269,7 @@ item {
 ```
 
 The labelmap file and the modified configuration files are added to this repo. 
-You can find them in [models/raccoon_labelmap.pbtxt](models/raccoon_labelmap.pbtxt) and [models/ssd_mobilenet_v2_raccoon.config](models/ssd_mobilenet_v2_raccoon.config).
+You can find them in [models/raccoon_labelmap.pbtxt](models/floorplan_labelmap.pbtxt) and [models/ssd_mobilenet_v2_raccoon.config](models/ssd_mobilenet_floorplan.config).
 
 Once you prepare the configuration file, you can start the training by typing the following commands: 
 
