@@ -1,5 +1,5 @@
-model_dir=../models/ssd_mobilenet_v2_raccoon
-out_dir=$model_dir/exported_model
+model_dir=../models/ssd_mobilenet_floorplan
+out_dir=$model_dir/frozen_model
 mkdir -p $out_dir
 
 python exporter_main_v2.py \
