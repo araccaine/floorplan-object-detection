@@ -1,3 +1,6 @@
+# Note
+This API Tutorial was made by [Abdelrahman G. Abubakr](https://github.com/abdelrahman-gaber). I made mostly organisationally changes to fit it to my needs; and removed the racoon example. The following text is written by him.
+
 # Tensorflow 2 Object Detection API Tutorial 
 
 [![Python 3.6](https://img.shields.io/badge/Python-3.6-3776AB)](https://www.python.org/downloads/release/python-360/)
