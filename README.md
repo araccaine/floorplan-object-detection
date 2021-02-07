@@ -1,4 +1,6 @@
 # Floorplan Object Detection
+To run the training script in Google Colab just place the Notebook [TrainingInColab.ipynb](TrainingInColab.ipynb) in your Colab instance and make sure to activate CPU acceleration in Google Colab under Runtime/Runtime type/CPU, then start the notebook.  
+Or see my used instance here: [Google Colab Training Notebook](https://colab.research.google.com/drive/14eqM7gIl68pMYUm43tLv9jcrOJJHO5G4?usp=sharing) (read only).
 
 # Note
 This API Tutorial was made by [Abdelrahman G. Abubakr](https://github.com/abdelrahman-gaber). I made mostly organisationally changes to fit it to my needs; and removed the racoon example. The following text is written by him.
